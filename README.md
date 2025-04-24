@@ -24,7 +24,7 @@ CIFAR-100 es un conjunto de datos ampliamente utilizado en el campo del Deep Lea
 
 **3.Entrenamiento del Modelo**  
    - Compilaremos el modelo con optimizador SGD (con Nesterov), pérdida `categorical_crossentropy` y métrica `accuracy`.
-   - Usaremos callbacks como `EarlyStopping`, `ModelCheckpoint` y `TensorBoard`.
+   - Usaremos callbacks como `EarlyStopping`, `ModelCheckpoint`, `Learning rate scheduler` y `TensorBoard`.
    - Entrenaremos con validación y ajustaremos el learning rate dinámicamente.
 
 **4.Evaluación y Métricas**  
