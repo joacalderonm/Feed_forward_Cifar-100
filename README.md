@@ -122,27 +122,27 @@ CIFAR-100 es un conjunto de datos ampliamente utilizado en el campo del Deep Lea
 
 # Conclusión
 
-**1.Rendimiento General:**
+**1. Rendimiento General:**
 
    ❌ El modelo MLP no logró un buen rendimiento para CIFAR-100.
 
-**2.Limitaciones:**
+**2. Limitaciones:**
    - Las MLPs procesan imágenes aplanadas, perdiendo la información espacial.
    - Para imágenes, las redes convolucionales (CNN) suelen tener mejor rendimiento.
    - El modelo puede tener dificultades con objetos rotados o en diferentes posiciones.
    -El modelo tiene overfitting.
 
-**3.Mejoras Potenciales:**
+**3. Mejoras Potenciales:**
    - Probar arquitecturas más complejas (más capas, más unidades).
    - Implementar técnicas de aumentación de datos (rotaciones, volteos, zoom).
    - Ajustar los hiperparámetros mediante búsqueda de cuadrícula o aleatoria.
    - Migrar a una arquitectura CNN para mejorar significativamente el rendimiento.
 
-**4.Comparación con otro tipo de arquitecturas:**
+**4. Comparación con otro tipo de arquitecturas:**
    - Convolucionales
 
 
 # Documentación y enlaces útiles
--[Documentación de Cifar-100](https://paperswithcode.com/dataset/cifar-100)
+- [Repositorio de Cifar-100](https://www.cs.toronto.edu/~kriz/cifar.html)
   
--[Documentación de Keras](https://keras.io/api/optimizers/)
+- [Documentación de Keras](https://keras.io/api/optimizers/)
