@@ -62,7 +62,7 @@ CIFAR-100 es un conjunto de datos ampliamente utilizado en el campo del Deep Lea
 
    - **Cargar el archivo de CIFAR-100:**
 
-     -El primer notebook requiere que descargues el archivo de CIFAR-100 desde aquí.
+     -El primer notebook requiere que descargues el archivo de CIFAR-100.
 
      -Después de descargarlo, sube el archivo comprimido a tu Google Drive.
 
@@ -96,7 +96,7 @@ CIFAR-100 es un conjunto de datos ampliamente utilizado en el campo del Deep Lea
 
      -Ejecuta las celdas en orden dentro de Google Colab. Esto cargará los datos, los preprocesará y entrenará el modelo.
 
-     -Uso del Modelo Preentrenado
+   **Uso del Modelo Preentrenado**
      
    - **Descargar el Modelo:**
 
@@ -114,7 +114,53 @@ CIFAR-100 es un conjunto de datos ampliamente utilizado en el campo del Deep Lea
 
      -Una vez configurada la ruta, ejecuta el código para cargar el modelo preentrenado y realizar la validación en los datos de CIFAR-100.
 
-     
+  **Ejecución en un entorno local**
+  
+  - **Si prefieres ejecutar todo de forma local en tu máquina, sigue estos pasos:**
+    
+      -Instalar dependencias:
+   
+      -Asegúrate de tener Python 3.x instalado.
+
+      -Instala las dependencias necesarias utilizando pip o conda:
+
+```
+pip install -r requirements.txt
+```
+
+  - **Descargar CIFAR-100:**
+  
+     -Descarga el archivo de CIFAR-100 y colócalo en tu directorio de trabajo.
+
+     -Descomprime el archivo:
+
+```
+tar -xzvf cifar-100-python.tar.gz
+```    
+
+ - **Ejecutar el código**
+
+   -Una vez descargados los datos, ejecuta los scripts localmente para entrenar y evaluar el modelo.
+
+   -Para ejecutar un notebook en Jupyter, puedes iniciar el servidor con:
+
+```
+jupyter notebook
+```   
+
+- **Resultados y Validación:**
+  
+  -Una vez completado el entrenamiento, podrás visualizar los resultados de la clasificación.
+
+  -Puedes guardar el modelo o usarlo para realizar predicciones en nuevas imágenes.
+
+# Estructura de archivos
+
+-**notebook_entrenamiento.ipynb:** Notebook para entrenar el modelo en Google Colab o entorno local.
+
+-**modelo_preentrenado:** Modelo preentrenado que puedes usar para validación.
+
+-**requirements.txt:** Lista de dependencias para ejecutar el proyecto localmente.
 
 # Pip utilizado
 ```
