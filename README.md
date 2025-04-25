@@ -40,6 +40,82 @@ CIFAR-100 es un conjunto de datos ampliamente utilizado en el campo del Deep Lea
    - Permitiremos al usuario cargar imágenes desde su dispositivo.
    - El modelo devolverá la clase predicha como salida textual.
 
+# Requisitos previos
+   - Google Colab: Acceso a una cuenta de Google y Google Colab.
+   
+   - Python 3.x: Si deseas ejecutar el proyecto localmente.
+   
+   - Internet: Para descargar el conjunto de datos de CIFAR-100 y los modelos.
+
+# Instrucciones de uso 
+
+   **Uso en Google Colab (Drive)**
+   - **Accede a Google Colab:**
+
+     -Abre Google Colab en tu navegador: https://colab.research.google.com.
+
+   - **Carga el proyecto en Google Drive:**
+
+     -Si no lo has hecho ya, sube tu repositorio a Google Drive.
+
+     -Asegúrate de tener el repositorio guardado en una carpeta en Google Drive para poder accederlo fácilmente.
+
+   - **Cargar el archivo de CIFAR-100:**
+
+     -El primer notebook requiere que descargues el archivo de CIFAR-100 desde aquí.
+
+     -Después de descargarlo, sube el archivo comprimido a tu Google Drive.
+
+     -En el notebook, cambia las rutas de acceso al archivo para que apunten a la carpeta de Google Drive donde guardaste el archivo CIFAR-100.
+
+   - **Ejecutar el Notebook:**
+
+     -En el notebook de Google Colab, ejecuta todas las celdas para cargar los datos, preprocesarlos, construir y entrenar el modelo.
+
+     -Si todo está configurado correctamente, el modelo se entrenará y podrás visualizar los resultados de la clasificación.
+
+   - **Guardar los resultados:**
+
+     -Puedes guardar el modelo entrenado en Google Drive, o también puedes descargarlo para usarlo en un entorno local si lo prefieres.
+
+   **Uso en google colab (entorno local)**
+
+   - **Descargar el archivo de CIFAR-100:**
+
+      -Descarga el archivo de CIFAR-100 desde este enlace.
+
+      -Una vez descargado, sube el archivo a tu entorno de Google Colab.
+
+   - **Cargar los datos localmente:**
+
+      -Cambia las rutas de acceso en el notebook de Colab para que apunten a la ubicación donde subiste el archivo en Colab.
+
+     -Asegúrate de descomprimir el archivo antes de cargar los datos.
+
+   - **Ejecutar el notebook:**
+
+     -Ejecuta las celdas en orden dentro de Google Colab. Esto cargará los datos, los preprocesará y entrenará el modelo.
+
+     -Uso del Modelo Preentrenado
+     
+   - **Descargar el Modelo:**
+
+     -Si prefieres utilizar un modelo preentrenado, puedes descargarlo desde el repositorio del proyecto o desde algún enlace proporcionado en la documentación.
+
+     -Asegúrate de que la ruta del modelo esté correctamente configurada en el código.
+
+   - **Cambiar las Rutas:**
+
+     -Asegúrate de cambiar las rutas a las de tu archivo local o en Google Drive.
+
+     -La ruta debe ser actualizada dentro de los notebooks para que apunten a la ubicación donde descargaste el modelo.
+
+   - **Cargar el Modelo:**
+
+     -Una vez configurada la ruta, ejecuta el código para cargar el modelo preentrenado y realizar la validación en los datos de CIFAR-100.
+
+     
+
 # Pip utilizado
 ```
 !pip install gradio
