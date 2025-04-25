@@ -10,24 +10,24 @@ CIFAR-100 es un conjunto de datos ampliamente utilizado en el campo del Deep Lea
 
 # ¿Qué haremos técnicamente?
 
-**1.Carga y Preprocesamiento de Datos**  
+**1. Carga y Preprocesamiento de Datos**  
    - Cargaremos el conjunto de datos CIFAR-100.
    - Redimensionaremos y normalizaremos las imágenes.
    - Convertiremos las etiquetas a formato categórico (one-hot encoding).
    - Aplanaremos las imágenes para pasarlas a una red totalmente conectada (MLP).
 
-**2.Construcción del Modelo**  
+**2. Construcción del Modelo**  
    - Diseñaremos una red neuronal MLP (Multilayer Perceptron).
    - Usaremos capas densas con funciones de activación ReLU.
    - Añadiremos Dropout y regularización L2.
    - Finalizaremos con una capa `softmax` para clasificar entre 100 clases.
 
-**3.Entrenamiento del Modelo**  
+**3. Entrenamiento del Modelo**  
    - Compilaremos el modelo con optimizador SGD (con Nesterov), pérdida `categorical_crossentropy` y métrica `accuracy`.
    - Usaremos callbacks como `EarlyStopping`, `ModelCheckpoint`, `Learning rate scheduler` y `TensorBoard`.
    - Entrenaremos con validación y ajustaremos el learning rate dinámicamente.
 
-**4.Evaluación y Métricas**  
+**4. Evaluación y Métricas**  
    - Analizaremos el rendimiento del modelo con:
    - Matriz de confusión
    - Curvas de precisión y recall
@@ -35,7 +35,7 @@ CIFAR-100 es un conjunto de datos ampliamente utilizado en el campo del Deep Lea
    - Histogramas de desempeño por clase
    - Identificaremos las clases con mejor y peor desempeño.
 
-**5.Interfaz Interactiva con Gradio**  
+**5. Interfaz Interactiva con Gradio**  
    - Implementaremos una interfaz web sencilla con Gradio.
    - Permitiremos al usuario cargar imágenes desde su dispositivo.
    - El modelo devolverá la clase predicha como salida textual.
@@ -114,58 +114,6 @@ CIFAR-100 es un conjunto de datos ampliamente utilizado en el campo del Deep Lea
 
      -Una vez configurada la ruta, ejecuta el código para cargar el modelo preentrenado y realizar la validación en los datos de CIFAR-100.
 
-  **Ejecución en un entorno local**
-  
-  - **Si prefieres ejecutar todo de forma local en tu máquina, sigue estos pasos:**
-    
-      -Instalar dependencias:
-   
-      -Asegúrate de tener Python 3.x instalado.
-
-      -Instala las dependencias necesarias utilizando pip o conda:
-
-```
-pip install -r requirements.txt
-```
-
-  - **Descargar CIFAR-100:**
-  
-     -Descarga el archivo de CIFAR-100 y colócalo en tu directorio de trabajo.
-
-     -Descomprime el archivo:
-
-```
-tar -xzvf cifar-100-python.tar.gz
-```    
-
- - **Ejecutar el código**
-
-   -Una vez descargados los datos, ejecuta los scripts localmente para entrenar y evaluar el modelo.
-
-   -Para ejecutar un notebook en Jupyter, puedes iniciar el servidor con:
-
-```
-jupyter notebook
-```   
-
-- **Resultados y Validación:**
-  
-  -Una vez completado el entrenamiento, podrás visualizar los resultados de la clasificación.
-
-  -Puedes guardar el modelo o usarlo para realizar predicciones en nuevas imágenes.
-
-# Estructura de archivos
-
--**notebook_entrenamiento.ipynb:** Notebook para entrenar el modelo en Google Colab o entorno local.
-
--**modelo_preentrenado:** Modelo preentrenado que puedes usar para validación.
-
--**requirements.txt:** Lista de dependencias para ejecutar el proyecto localmente.
-
-# Pip utilizado
-```
-!pip install gradio
-```
 # Ventajas de usar gradio
 
 - Fácil de compartir: El enlace público permite compartir con cualquier persona.
@@ -192,6 +140,7 @@ jupyter notebook
 
 **4.Comparación con otro tipo de arquitecturas:**
    - Convolucionales
+
 
 # Documentación y enlaces útiles
 -[Documentación de Cifar-100](https://paperswithcode.com/dataset/cifar-100)
